@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido de Autoservicio</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+        .producto { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+        h1, h2 { text-align: center; }
+        button { font-size: 1.2em; padding: 10px 20px; cursor: pointer; }
+        .promociones { background-color: #e0f2f1; border: 2px dashed #00796b; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+<h1>Nuestro Menú</h1>
+
+<div class="promociones">
+    <h2>🔥 ¡Promociones del Día! 🔥</h2>
+    {% for promo in promociones %}
+    <div>
+        <strong>{{ promo[1] }}:</strong>
+        <p>{{ promo[2] }}</p>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+
+<form action="/realizar_pedido" method="post">
+    {% for producto in productos %}
+    <div class="producto">
+        <div>
+            <h2>{{ producto[1] }} - Bs{{ producto[2] }}</h2>
+            <p>{{ producto[3] }}</p>
+        </div>
+        <input type="number" name="cantidad_{{ producto[0] }}" value="0" min="0" max="10" style="width: 50px;">
+    </div>
+    {% endfor %}
+    <br>
+    <button type="submit">Realizar Pedido</button>
+</form>
+</body>
+</html>

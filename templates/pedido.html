@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estado de tu Pedido</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; text-align: center; }
+        .estado { font-size: 2em; font-weight: bold; color: #2a9d8f; }
+        a { display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+<h1>¡Gracias por tu pedido!</h1>
+<p>Tu número de pedido es: <strong>{{ pedido[1] }}</strong></p>
+<h2>Estado actual:</h2>
+<p class="estado">{{ pedido[3] }}</p>
+
+<a href="/">Volver al menú principal</a>
+</body>
+</html>

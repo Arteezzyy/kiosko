@@ -1,0 +1,10 @@
+# Entorno virtual de Python
+.venv/
+venv/
+
+# Carpetas de caché de Python
+__pycache__/
+*.pyc
+
+# Carpeta de configuración de IntelliJ
+.idea/
