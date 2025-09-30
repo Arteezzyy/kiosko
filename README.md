@@ -99,6 +99,7 @@ Panel de Administración: Accede a http://127.0.0.1:5000/admin para gestionar el
 👥 Autores
 AYAVIRI QUISPE YURI DANIEL - Desarrollo del proyecto - @Arteezzyy
 
-CORANI REYES WILMER - Colaborador - @Wilmer740
+REYES CORANI WILMER - Colaborador - @Wilmer740
 
 Proyecto realizado para la materia SISTEMAS DE INFORMACIÓN II - UNIVERSIDAD MAYOR DE SAN SIMÓN - 2025
+DOCENTE: ING. FLORES SOLIZ JUAN MARCELO
